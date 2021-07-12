@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'prix4.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Anadir(object):
+    def setupUi(self, Anadir):
+        Anadir.setObjectName("Anadir")
+        Anadir.resize(240, 320)
+        self.centralwidget = QtWidgets.QWidget(Anadir)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(20, 20, 121, 61))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(20, 110, 91, 16))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(20, 150, 81, 21))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(20, 190, 131, 31))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_4.setFont(font)
+        self.label_4.setObjectName("label_4")
+        self.boton5 = QtWidgets.QPushButton(self.centralwidget)
+        self.boton5.setGeometry(QtCore.QRect(30, 240, 75, 23))
+        self.boton5.setObjectName("boton5")
+        self.boton6 = QtWidgets.QPushButton(self.centralwidget)
+        self.boton6.setGeometry(QtCore.QRect(140, 240, 75, 23))
+        self.boton6.setObjectName("boton6")
+        self.input1 = QtWidgets.QTextEdit(self.centralwidget)
+        self.input1.setGeometry(QtCore.QRect(100, 40, 131, 31))
+        self.input1.setObjectName("input1")
+        self.input2 = QtWidgets.QDoubleSpinBox(self.centralwidget)
+        self.input2.setGeometry(QtCore.QRect(120, 110, 62, 22))
+        self.input2.setMaximum(999999.99)
+        self.input2.setObjectName("input2")
+        self.input3 = QtWidgets.QDoubleSpinBox(self.centralwidget)
+        self.input3.setGeometry(QtCore.QRect(120, 150, 62, 22))
+        self.input3.setMaximum(999999.99)
+        self.input3.setObjectName("input3")
+        self.input4 = QtWidgets.QComboBox(self.centralwidget)
+        self.input4.setGeometry(QtCore.QRect(150, 200, 81, 22))
+        self.input4.setObjectName("input4")
+        self.input4.addItem("")
+        self.input4.addItem("")
+        self.input4.addItem("")
+        self.input4.addItem("")
+        Anadir.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(Anadir)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 240, 21))
+        self.menubar.setObjectName("menubar")
+        Anadir.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(Anadir)
+        self.statusbar.setObjectName("statusbar")
+        Anadir.setStatusBar(self.statusbar)
+
+        self.retranslateUi(Anadir)
+        QtCore.QMetaObject.connectSlotsByName(Anadir)
+
+    def retranslateUi(self, Anadir):
+        _translate = QtCore.QCoreApplication.translate
+        Anadir.setWindowTitle(_translate("Anadir", "MainWindow"))
+        self.label.setText(_translate("Anadir", "<html><head/><body><p>Nombre</p><p>Sustancia  :</p></body></html>"))
+        self.label_2.setText(_translate("Anadir", "Valor limite :"))
+        self.label_3.setText(_translate("Anadir", "Factor O3  :"))
+        self.label_4.setText(_translate("Anadir", "Tipo de sustancia"))
+        self.boton5.setText(_translate("Anadir", "Añadir "))
+        self.boton6.setText(_translate("Anadir", "Regresar"))
+        self.input4.setItemText(0, _translate("Anadir", "Select"))
+        self.input4.setItemText(1, _translate("Anadir", "Toxica"))
+        self.input4.setItemText(2, _translate("Anadir", "Explosiva"))
+        self.input4.setItemText(3, _translate("Anadir", "Inflamable"))
+
